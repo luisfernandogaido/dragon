@@ -9,10 +9,14 @@ const html = `
     </p>
 `;
 
+//language=css
+const css = `
+    body {
+        background: lightblue;
+    }
+`;
+
 const ini = async () => {
-  document.querySelector('main').innerHTML = html;
 };
 
-const cssFile = 'app/inbox.css';
-
-export { ini, cssFile };
+export { html, css, ini };
