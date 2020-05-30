@@ -64,9 +64,12 @@ button.more {
     transition: ease-in-out all .1s;
 }
 
-.button-options button {
+
+.button-options > div > button {
     display: block;
     text-align: left;
     white-space: nowrap;
     font-size: 0.9rem;
+    padding: 0.75rem 0.25rem;
+    width: 100%;
 }
