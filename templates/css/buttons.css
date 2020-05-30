@@ -14,6 +14,15 @@ button.icon, a.button.icon {
     height: var(--lado-botao);
     flex: 0 0 var(--lado-botao);
     background: no-repeat center;
+    outline: none;
+}
+
+button.icon:hover, a.button.icon:hover, button.icon:focus, a.button.icon:focus {
+    background-color: #f2f2f2;
+}
+
+button.icon:active, a.button.icon:active {
+    background-color: #e4e4e4;
 }
 
 button.more {
@@ -39,14 +48,20 @@ button.more {
     top: 0;
     right: 0;
     background: white;
-    box-shadow: 0 0 2px 2px #cccccc;
     border-radius: 2px;
-    padding: 0.5rem;
-    display: none;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: none;
 }
 
 .button-options > div.show {
-    display: block;
+    padding: 0.5rem;
+    height: auto;
+    width: auto;
+    box-shadow: 0 0 2px 2px #cccccc;
+    transition: ease-in-out all .1s;
 }
 
 .button-options button {

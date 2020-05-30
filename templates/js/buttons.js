@@ -7,11 +7,15 @@ const registra = () => {
 };
 
 const show = ev => {
+  const b = ev.currentTarget;
   ev.stopPropagation();
   const pars = d.searchPars();
   pars.set('button-options', '1');
   d.setSearchPars(pars);
-  ev.currentTarget.parentNode.querySelector('div').classList.add('show');
+  setTimeout(() => {
+    b.parentNode.querySelector('div').classList.add('show');
+  }, 25);
+
 };
 
 const hide = () => {
