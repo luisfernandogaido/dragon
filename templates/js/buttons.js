@@ -46,8 +46,8 @@ window.addEventListener('popstate', () => {
   }
 });
 
-window.addEventListener('click', hide);
-window.addEventListener('keydown', ev => {
+document.body.addEventListener('click', hide);
+document.body.addEventListener('keydown', ev => {
   if (ev.key != 'Escape') return;
   hide();
 });
