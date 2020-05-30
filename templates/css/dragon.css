@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+html, body {
+    height: 100vh;
+    color: #202124;
+}
+
+a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    height: 3.5rem;
+    border: 1px solid #eceff1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > a {
+    margin: 0 0.5rem;
+}
