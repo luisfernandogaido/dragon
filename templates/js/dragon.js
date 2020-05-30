@@ -1,5 +1,5 @@
 import './router.js';
-import './buttons.js';
+import './buttons.js?2';
 
 const searchPars = () => {
   const i = location.hash.indexOf('?');
