@@ -1,3 +1,5 @@
+@import "buttons.css";
+
 @font-face {
     font-family: Roboto;
     src: url("../fonts/Roboto-Regular.ttf");
@@ -25,7 +27,7 @@ header {
     height: 3.5rem;
     border: 1px solid #eceff1;
     display: flex;
-    align-items: stretch;
+    align-items: center;
     position: fixed;
     left: 0;
     right: 0;
@@ -45,6 +47,7 @@ header > a {
 #logo {
     background: url("../img/rocket.svg") no-repeat left 0.25rem center;
     background-size: 2rem;
+    align-self: stretch;
     padding-left: 2.5rem;
     color: #4f5d73;
     font-weight: bold;

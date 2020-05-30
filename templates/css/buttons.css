@@ -1,0 +1,57 @@
+:root {
+    --lado-botao: 3rem;
+}
+
+button, a.button {
+    border: none;
+    background: transparent;
+    padding: 0.5rem;
+}
+
+button.icon, a.button.icon {
+    padding: 0;
+    border-radius: 50%;
+    height: var(--lado-botao);
+    flex: 0 0 var(--lado-botao);
+    background: no-repeat center;
+}
+
+button.more {
+    background-image: url("../img/buttons/more.svg");
+}
+
+.buttons-right {
+    display: flex;
+    margin-left: auto;
+    justify-content: flex-end;
+    margin-right: 0.25rem;
+}
+
+.button-options {
+    display: flex;
+    height: var(--lado-botao);
+    flex: 0 0 var(--lado-botao);
+    position: relative;
+}
+
+.button-options > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 0 2px 2px #cccccc;
+    border-radius: 2px;
+    padding: 0.5rem;
+    display: none;
+}
+
+.button-options > div.show {
+    display: block;
+}
+
+.button-options button {
+    display: block;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 0.9rem;
+}
