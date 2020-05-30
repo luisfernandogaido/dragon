@@ -15,16 +15,21 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 header {
     height: 3.5rem;
     border: 1px solid #eceff1;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: white;
+}
+
+main {
+    padding-top: 3.5rem;
 }
 
 header > a {

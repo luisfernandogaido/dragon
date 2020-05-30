@@ -13,4 +13,6 @@ const ini = async () => {
   document.querySelector('main').innerHTML = html;
 };
 
-export { ini };
+const cssFile = 'app/inbox.css';
+
+export { ini, cssFile };

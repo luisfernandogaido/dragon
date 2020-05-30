@@ -1,4 +1,3 @@
-//language=html
 let html;
 
 const ini = async () => {
@@ -11,7 +10,9 @@ const ini = async () => {
 };
 
 const clica = () => {
-  console.log('botão clicado!');
+  alert('botão clicado!');
 };
 
-export { ini };
+const cssFile = 'app/all.css';
+
+export { ini, cssFile };
