@@ -3,6 +3,14 @@ import './buttons.js?2';
 import './aut.js';
 import './forms.js';
 
+const show = el => {
+  el.classList.remove('hide');
+};
+
+const hide = el => {
+  el.classList.add('hide');
+};
+
 const searchPars = () => {
   const i = location.hash.indexOf('?');
   if (i == -1) return new URLSearchParams();
@@ -16,4 +24,6 @@ const setSearchPars = (pars, replace = false) => {
   else window.history.pushState(null, null, hash + (pars.toString() ? '?' + pars : ' '));
 };
 
-export { searchPars, setSearchPars };
+show(document.body);
+
+export { show, hide, searchPars, setSearchPars };
