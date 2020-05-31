@@ -1,0 +1,49 @@
+input, select, textarea {
+    outline: none;
+    background: #f5f5f5;
+    border: none;
+    padding: 0.5rem;
+}
+
+.campos {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.campos > .campo {
+    flex: 1 1 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.campos > .campo .rotulo, .campos > .campo .controle, .campos > .campo .mensagem {
+    display: flex;
+}
+
+.campos > .campo .rotulo {
+    font-size: 0.8rem;
+}
+
+.campos > .campo .controle input, .campos > .campo .controle select, .campos > .campo .controle textarea {
+    flex: 1 1 100%;
+    border-bottom: 1px solid #8e8e8e;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+.campos > .campo .controle input:hover,
+.campos > .campo .controle select:hover,
+.campos > .campo .controle textarea:hover {
+    background: #ececec;
+}
+
+.campos > .campo .controle input:focus,
+.campos > .campo .controle select:focus,
+.campos > .campo .controle textarea:focus {
+    background: #dcdcdc;
+    border-bottom: 1px solid #6200ee;
+}
+
+.campos > .campo .mensagem {
+    font-size: 0.8rem;
+}
