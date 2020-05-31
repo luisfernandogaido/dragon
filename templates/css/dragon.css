@@ -33,12 +33,12 @@ header {
     right: 0;
     top: 0;
     background: white;
-    padding: 0 0.5rem;
+    padding: 0 1rem;
 }
 
 main {
     padding-top: 4rem;
-    margin: 0 0.5rem;
+    margin: 0 1rem;
 }
 
 header > a {
@@ -47,10 +47,26 @@ header > a {
 }
 
 #logo {
-    background: url("../img/rocket.svg") no-repeat left 0.25rem center;
+    background: url("../img/rocket.svg") no-repeat left 0 center;
     background-size: 2rem;
     align-self: stretch;
     padding-left: 2.5rem;
     color: #4f5d73;
     font-weight: bold;
+}
+
+h1 {
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+h3 {
+    font-size: 1.05rem;
+}
+
+h4, h5, h6 {
+    font-size: 1rem;
 }

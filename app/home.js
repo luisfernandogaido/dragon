@@ -1,16 +1,14 @@
 //language=html
 const html = `
-    
+    <div class="buttons">
+        <a href="#login" class="button primario">Entrar</a>
+        <button>Botão</button>
+    </div>
 `;
 
 //language=css
 const css = `
-    @media (min-width: 1024px) {
-        form {
-            width: 500px;
-            margin: auto;
-        }
-    }
+
 `;
 
 const ini = async () => {

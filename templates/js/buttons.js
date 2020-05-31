@@ -29,11 +29,11 @@ const hide = () => {
 };
 
 window.addEventListener('load', () => {
-  const observer = new MutationObserver(registra);
-  observer.observe(document.body, { attributes: true, childList: true, subtree: true });
-  registra();
-  const pars = d.searchPars();
-  if (pars.has('button-options')) window.history.back();
+  // const observer = new MutationObserver(registra);
+  // observer.observe(document.body, { attributes: true, childList: true, subtree: true });
+  // registra();
+  // const pars = d.searchPars();
+  // if (pars.has('button-options')) window.history.back();
 });
 
 window.addEventListener('popstate', () => {

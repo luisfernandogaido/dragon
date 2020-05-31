@@ -1,5 +1,7 @@
 import './router.js';
 import './buttons.js?2';
+import './aut.js';
+import './forms.js';
 
 const searchPars = () => {
   const i = location.hash.indexOf('?');

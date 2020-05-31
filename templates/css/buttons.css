@@ -3,9 +3,31 @@
 }
 
 button, a.button {
-    border: none;
-    background: transparent;
-    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #f8f9fa;
+    padding: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: black;
+    margin: 1px;
+}
+
+@media (min-width: 1024px) {
+    button, a.button {
+        padding: 0.5rem;
+    }
+}
+
+button:hover, a.button:hover {
+    background: #e2e6ea;
+    border-color: #dae0e5;
+}
+
+button.primario, a.button.primario {
+    background: #508bc7;
+    color: white;
+    border: 1px solid #346dad;
 }
 
 button.icon, a.button.icon {
@@ -25,8 +47,12 @@ button.icon:active, a.button.icon:active {
     background-color: #e4e4e4;
 }
 
-button.more {
+button.more, a.button.more {
     background-image: url("../img/buttons/more.svg");
+}
+
+button.back, a.button.back {
+    background-image: url("../img/buttons/back.svg");
 }
 
 .buttons-right {
@@ -71,4 +97,14 @@ button.more {
     font-size: 0.9rem;
     padding: 0.75rem 0.25rem;
     width: 100%;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0.5rem 0;
+}
+
+.buttons button, .buttons a.button {
+
 }
