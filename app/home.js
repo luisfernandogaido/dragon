@@ -5,10 +5,19 @@ const html = `
         <button>Botão</button>
     </div>
 `;
-let cssFile = 'app/home.css';
+
+//language=css
+let css = `
+    @media (min-width: 1024px) {
+        .buttons {
+            width: 350px;
+            margin: auto;
+        }
+    }
+`;
 
 const ini = async () => {
 
 };
 
-export { html, cssFile, ini };
+export { html, css, ini };

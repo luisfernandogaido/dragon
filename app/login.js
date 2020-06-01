@@ -1,8 +1,8 @@
-let htmlFile = 'app/login.html';
-let cssFile = 'app/login.css';
+import { html } from './login.html.js';
+import { css } from './login.css.js';
 
 const ini = async () => {
 
 };
 
-export { htmlFile, cssFile, ini };
+export { html, css, ini };
