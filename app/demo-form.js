@@ -1,4 +1,5 @@
 import * as alerta from '../templates/js/alerta.js';
+import * as forms from '../templates/js/forms.js';
 
 //language=html
 const html = `
@@ -43,6 +44,9 @@ const html = `
                 <div class="mensagem"></div>
             </div>
         </div>
+        <div class="buttons">
+            <button class="primario">Salvar</button>
+        </div>
     </form>
 `;
 
@@ -56,8 +60,16 @@ let css = `
     }
 `;
 
+let f;
+
 const ini = async () => {
-  alerta.show('Uma mensagem de alerta');
+  f = document.querySelector('form');
+  document.querySelector('button.primario').addEventListener('click', salva);
+};
+
+const salva = () => {
+  if (forms.reportaInvalidos(f)) return;
+  alert('OK');
 };
 
 export { html, css, ini };

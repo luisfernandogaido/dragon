@@ -16,6 +16,7 @@ const registra = () => {
         campo.classList.remove('required');
       }
       el.addEventListener('blur', sai);
+      el.addEventListener('keydown', enter);
     });
   });
   observer.observe(document.body, { attributes: true, childList: true, subtree: true });
@@ -25,8 +26,7 @@ const prevent = ev => {
   ev.preventDefault();
 };
 
-const sai = ev => {
-  const el = ev.currentTarget;
+const validaCampo = el => {
   const campo = el.parentNode.parentNode;
   let msg = campo.querySelector('.mensagem');
   if (!msg) msg = campo.parentNode.querySelector('.mensagem');
@@ -39,9 +39,27 @@ const sai = ev => {
   }
 };
 
+const sai = ev => {
+  validaCampo(ev.currentTarget);
+};
+
+const enter = ev => {
+  if (ev.key != 'Enter') return;
+  validaCampo(ev.currentTarget);
+};
+
 const observer = new MutationObserver(registra);
 
 window.addEventListener('load', () => {
   observer.observe(document.body, { attributes: true, childList: true, subtree: true });
   registra();
 });
+
+const reportaInvalidos = f => {
+  f.querySelectorAll('input, textarea, select').forEach(el => {
+    validaCampo(el);
+  });
+  return f.querySelector('input:invalid, textarea:invalid, select:invalid') != null;
+};
+
+export { reportaInvalidos };
