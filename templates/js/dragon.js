@@ -3,6 +3,7 @@ import './buttons.js?2';
 import './aut.js';
 import './forms.js';
 import './alerta.js';
+import './client.js';
 
 const show = el => {
   el.classList.remove('hide');

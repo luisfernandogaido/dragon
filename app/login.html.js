@@ -10,7 +10,7 @@ let html = `
                     <label for="user">Usuário</label>
                 </div>
                 <div class="controle">
-                    <input type="text" id="user" name="user">
+                    <input type="text" id="user" name="user" required>
                 </div>
                 <div class="mensagem"></div>
             </div>
@@ -19,7 +19,7 @@ let html = `
                     <label for="pass">Senha</label>
                 </div>
                 <div class="controle">
-                    <input type="password" id="pass" name="pass">
+                    <input type="password" id="pass" name="pass" required>
                 </div>
                 <div class="mensagem"></div>
             </div>

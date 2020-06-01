@@ -2,7 +2,6 @@
 const html = `
     <div class="buttons">
         <a href="#login" class="button primario">Entrar</a>
-        <a href="#demo-form" class="button">Demo Form</a>
     </div>
 `;
 
