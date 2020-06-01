@@ -1,10 +1,3 @@
-// f.noValidate = true;
-// f.addEventListener('submit', ev => {
-//   ev.preventDefault();
-// });
-
-import * as d from './dragon.js';
-
 const registra = () => {
   observer.disconnect();
   document.querySelectorAll('form').forEach(f => {
@@ -19,7 +12,6 @@ const prevent = ev => {
 };
 
 const observer = new MutationObserver(registra);
-
 
 window.addEventListener('load', () => {
   observer.observe(document.body, { attributes: true, childList: true, subtree: true });

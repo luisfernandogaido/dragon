@@ -11,6 +11,7 @@ button, a.button {
     text-align: center;
     color: black;
     margin: 1px;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
 }
 
 @media (min-width: 1024px) {

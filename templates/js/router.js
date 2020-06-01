@@ -1,4 +1,4 @@
-import { routes } from '../../app/routes.js';
+import { routes } from './routes.js';
 
 const style = document.querySelector('style');
 const main = document.querySelector('main');
