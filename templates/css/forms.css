@@ -5,6 +5,12 @@ input, select, textarea {
     padding: 1rem;
 }
 
+@media (min-width: 1024px) {
+    input, select, textarea {
+        padding: 0.75rem;
+    }
+}
+
 .campos {
     display: flex;
     flex-flow: row wrap;

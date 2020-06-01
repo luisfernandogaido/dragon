@@ -15,7 +15,7 @@ button, a.button {
 
 @media (min-width: 1024px) {
     button, a.button {
-        padding: 0.5rem;
+        padding: 0.75rem;
     }
 }
 
@@ -28,6 +28,11 @@ button.primario, a.button.primario {
     background: #508bc7;
     color: white;
     border: 1px solid #346dad;
+}
+
+button.link, a.button.link {
+    border: 1px solid transparent;
+    background: transparent;
 }
 
 button.icon, a.button.icon {

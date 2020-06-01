@@ -5,14 +5,10 @@ const html = `
         <button>Botão</button>
     </div>
 `;
-
-//language=css
-const css = `
-
-`;
+let cssFile = 'app/home.css';
 
 const ini = async () => {
 
 };
 
-export { html, css, ini };
+export { html, cssFile, ini };
