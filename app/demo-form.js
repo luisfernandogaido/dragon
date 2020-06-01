@@ -13,9 +13,9 @@ const html = `
                     <label for="nome">Nome</label>
                 </div>
                 <div class="controle">
-                    <input type="text" id="nome" name="nome" required pattern="^[a-z]$">
+                    <input type="text" id="nome" name="nome" required>
                 </div>
-                <div class="mensagem">Luís Fernando Gaido</div>
+                <div class="mensagem"></div>
             </div>
             <div class="campo">
                 <div class="rotulo">
@@ -44,39 +44,6 @@ const html = `
             </div>
         </div>
     </form>
-
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-    <p>luís fernando gaido</p>
-
 `;
 
 //language=css
@@ -90,7 +57,7 @@ let css = `
 `;
 
 const ini = async () => {
-  alerta.show('oi');
+  alerta.show('Uma mensagem de alerta');
 };
 
 export { html, css, ini };
