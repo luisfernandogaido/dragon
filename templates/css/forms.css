@@ -11,6 +11,20 @@ input, select, textarea {
     }
 }
 
+input[type=number] {
+    text-align: right;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 .campos {
     display: flex;
     flex-flow: row wrap;
@@ -20,6 +34,7 @@ input, select, textarea {
     flex: 1 1 100%;
     display: flex;
     flex-flow: column nowrap;
+    margin-bottom: 0.5rem;
 }
 
 .campos > .campo .rotulo, .campos > .campo .controle, .campos > .campo .mensagem {
@@ -30,8 +45,18 @@ input, select, textarea {
     font-size: 0.8rem;
 }
 
+.campos > .campo .controle {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.campos > .campo .controle label {
+    margin-right: 0.5rem;
+}
+
 .campos > .campo .controle input, .campos > .campo .controle select, .campos > .campo .controle textarea {
     flex: 1 1 100%;
+    border: 1px solid transparent;
     border-bottom: 1px solid #8e8e8e;
     font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
     font-size: 1rem;
@@ -47,9 +72,24 @@ input, select, textarea {
 .campos > .campo .controle select:focus,
 .campos > .campo .controle textarea:focus {
     background: #dcdcdc;
+    border: 1px solid transparent;
     border-bottom: 1px solid #6200ee;
 }
 
 .campos > .campo .mensagem {
     font-size: 0.8rem;
+    font-style: italic;
+}
+
+.campos > .campo.invalid input, .campos > .campo.invalido select, .campos > .campo.invalid textarea {
+    border: 1px solid #721c24;
+}
+
+.campos > .campo.invalid .mensagem {
+    color: #721c24;
+}
+
+.campos > .campo.required label::after {
+    content: "*";
+    color: #721c24;
 }

@@ -1,0 +1,41 @@
+#alerta {
+    align-items: center;
+    background: #202124;
+    color: white;
+    font-size: 0.9rem;
+    padding: 1rem 3.5rem 1rem 1rem;
+    position: fixed;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    border-radius: 4px;
+    display: none;
+}
+
+#alerta.show {
+    display: flex;
+}
+
+#alerta button.close {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+#alerta > .msg {
+    flex: 1 1 auto;
+}
+
+@media (min-width: 1024px) {
+    #alerta {
+        right: auto;
+    }
+
+    #alerta > .msg {
+        white-space: nowrap;
+        display: flex;
+    }
+}
